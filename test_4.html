@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>practising about the forms</h3>
+    <p>the main purpose of the form is to collect user input</p>
+    <p>the main elements of forms are lable,input,select,options,textarea</p>
+
+    <h3>input elements are multiples like text,password,radio,checkbox,submit,calender,fileupload,number</h3>
+    <form >
+        <label for="email">Enter your Email:</label>
+        <input type="text" name="email">
+
+        <br>
+        <label for="pass">Enter your Password:</label>
+        <input type="Password" name="pass">
+        <br>
+        <input type="submit">
+
+
+    </form>
+
+
+    <form action="">
+
+        <fieldset>
+            <legend>Creating a form with all the elements of the Forms</legend>
+            <label for="textfield">
+                Text Field:
+                <input type="text" name="textfield">
+            </label>
+
+            <br>
+
+            <label for="passwordfield">
+                Password Field:
+                <input type="password" name="passwordfield" id="passwordfield">
+            </label>
+
+            <br> 
+
+            <label for="radiofields">
+                <input type="radio" name="radiofields" > Male
+            </label>
+
+            <br>
+            <label for="radiofields">
+                <input type="radio" name="radiofields" > Female
+            </label>
+
+
+            <br>
+
+            <label for="checkboxfields">
+                <input type="checkbox" name="checkboxfields" > English
+            </label>
+
+            <br>
+            <label for="radiofields">
+                <input type="checkbox" name="checkboxfields" > Hindi
+            </label>
+
+
+            <br>
+            <label for="calenderfield">
+                Select a date:
+                <input type="date" name="calenderfield" >
+            </label>
+
+            <br>
+            <label for="submitfield">
+                submit type
+                <input type="submit" name="submitfield" >
+            </label>
+
+            <br>
+            <label for="selector1"><select name="selector1" id="selector1" >
+                <option value="" selected>---Choose a option---</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Banalore">Bangalore</option>
+            </select></label>
+            <br>
+            <label for="fileupload">Upload</label>
+            <input type="file" name="fileupload" id="fileupload">
+            
+
+            <br>
+
+            <label for="counter">Select a number</label>
+            <input type="number" name="counter" id="counter" min="0" max="40">
+
+            <br>
+
+            <textarea name="textarea1" id="textarea1" cols="30" rows="5"></textarea>
+
+            <br>
+            <label for="submitfield1">
+                submit type
+                <input type="submit" name="submitfield1" >
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
