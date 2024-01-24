@@ -1,0 +1,23 @@
+h1{
+    font-family:  monospace;
+    font-size: 90px;
+    font-family: Grape Nuts;
+
+    color: #8bc486;
+    
+    
+}
+
+p{
+    font-style: italic;
+    font-family: 'Grape Nuts', cursive;
+    background-color: rgba(222, 69, 156, 0.724)
+    
+}
+
+p.para{
+    font-size: 40px;
+    font-weight: 400; 
+    font-family: 'Sevillana', cursive;
+    color: #45de9c;
+}
