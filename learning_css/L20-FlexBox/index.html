@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        .container{
+            border: 1px solid black;
+            /* width: 100px; */
+            height: 1000px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:center;    
+            /* Justify-content works main-axis */
+            align-items: center;
+            /* align-items works cross axis */
+
+            /* flex-flow: column wrap; */
+        }
+
+        .box{
+            /* width: 200px; */
+            height: 200px;
+            border: 1px solid brown;
+            margin: 2px;
+            overflow: hidden;
+        }
+        img{
+            width: 200px;
+            
+        }
+
+        div:first-child{
+           
+            flex-shrink: 3;
+            align-self: last baseline;
+           
+        }
+
+        @media (width<=750) {
+
+            .container{
+                border: 2px dashed black;
+            }
+            
+        }
+    </style>
+<body>
+    
+
+    <div class="container">
+        <div class="box" id="box1"><img src="spidy1.jpg" alt="spidy1"></div>
+        <div class="box" id="box2"><img src="spidy2.jpg" alt="spidy1"></div>
+        <div class="box" id="box3"><img src="spidy3.jpg" alt="spidy1"></div>
+        <div class="box" id="box4"><img src="spidy4.jpg" alt="spidy1"></div>
+    </div>
+</body>
+</html>

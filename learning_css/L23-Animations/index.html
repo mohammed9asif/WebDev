@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            border-radius: 400px;
+            background-color: azure;
+            /* animation-name: move_right;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+             */
+
+            animation: move_right 3s ease 2s infinite alternate;
+
+        }
+
+        @keyframes move_right {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 85%;
+                
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+    </div>
+</body>
+</html>

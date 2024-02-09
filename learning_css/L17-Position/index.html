@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            border: 2px solid black;
+            position: relative;
+            
+            height: 200px;
+            top: 100px;
+        }
+        div.audiocontainer{
+            height: 2000px;
+            width: 3000px;
+        }
+        h1{
+            
+            top: 200px;
+        }
+
+        audio{
+            border: 2px black solid;
+            position: sticky;
+            top: 100px;
+           left: 300px;
+            padding: 10px;
+            margin: 20px;
+           
+        }
+
+        video{
+            width: 300px;
+            height: 300px;
+            position: fixed;
+            top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div>
+
+        <h1>This lesson is about the Position</h1>
+
+        <h2>Default position of all elements are static </h2>
+
+    </div>
+
+    <div>
+        <p>static position is default , it does not move anywhere</p>
+        <p>relative postion is movable relative to parent , if we put top 100px then it will make space in top 100px means it will move downward</p>
+        <p><strong>The imp point of relative postion is it will reserve the space of element </strong>When relatively changes , other elements wont occupy that space </p>    
+    </div>
+
+    <div>
+        <ul>
+            <li>The Other Imp position is absolute , <strong><em>Mainly used for overlapping</em></strong></li>
+            <li>Similar to relative but <strong><em>It will not reserve the space , other elements will occupy that place</em></strong></li>
+            <li>if any element want to put position as absolute then its parent should be marked as relative</li>
+        </ul>
+    
+        <ol>
+            <li>1.Sticky - stick to a position in the view port and till its parent</li>
+            <li>2. fixed- stick to a postiion in the view port whole page</li>
+    
+    
+        </ol>
+    
+        <ul>
+            <li>
+                <strong>
+                    <bold><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Refer this site for full info</a></bold>
+                </strong>
+            </li>
+        </ul>
+    
+    </div>
+
+    <div class="audiocontainer">
+
+       <audio src="audioFile.mp3" controls></audio>
+       <video src="ApexLegends.mp4" controls></video>
+    </div>
+
+</body>
+</html>

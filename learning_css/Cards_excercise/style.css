@@ -1,0 +1,48 @@
+/* applying css on universal selectors */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bodyContainer{
+    height: 100%;
+    background-color: rgb(111, 190, 224);
+}
+
+.card{
+    height: 800px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    
+}
+
+#firstCard{
+    height: 600px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.qrimage{
+    
+    height: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: blanchedalmond;
+    
+}
+#firstCard img{
+    
+}
