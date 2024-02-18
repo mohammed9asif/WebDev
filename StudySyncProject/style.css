@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background:#ffffff;
+    --light-gray: #f0f0f0;
+}
+.body_container{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+
+
+
+/* styling the nav and heading elements */
+.navigation_bar{
+    padding: 1.5em;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navigation_bar a{
+    text-decoration: none;
+}
+
+.nav_heading{
+    display: flex;
+    gap: 10px;
+
+}
+.navigation_bar .nav_heading a{
+    color: rgb(33, 25, 25);
+}
+
+.nav_links ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.3rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width:790px){
+    .nav_links ul{
+        display: none;
+    }
+}
+.nav_links a{
+    color: grey;
+}
+
+.nav_contact{
+    
+    border-radius: 5px;
+    padding: 0.7rem 1.7rem;
+    background-color: rgb(19, 42, 130);
+    color: white;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:790px){
+    .nav_contact{
+        display: none;
+    }
+}
+
+.hamburger{
+    width: 2rem;
+    height: 1rem;
+    display: none;
+}
+
+@media screen and (max-width:790px){
+    .hamburger{
+       display: block;
+    }
+}
+
+
+/* styling the Hero section of the page */
+
+
+.main_container{
+    padding-top: 2rem;
+    display: flex;
+   
+    width: 80%;
+    margin: 0 auto;
+    gap: 5rem;
+    
+}
+
+.item{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+@media screen and (max-width:790px){
+    .main_container{
+        flex-direction: column;
+        
+
+    }
+
+   
+}
+.main_info{
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    animation: slide 1s forwards ;
+    opacity: 0;
+}
+
+@keyframes slide {
+    from{
+       transform: translate(-100%);
+    }to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+.main_info span{
+    font-weight: 600;
+    color: blue;
+    
+
+}
+
+.main_info h2{
+    font-weight: 800;
+    font-size: 3rem;
+    
+}
+
+.main_info p{
+    font-weight: 500;
+    color: grey;
+    
+}
+.main_info_btns{
+    display: flex;
+    gap: 2rem;
+}
+.main_btns{
+    background-color:rgb(19, 42, 130); 
+    display: block;
+    width: 7rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    
+}
+
+#take_tour{
+    background-color: black;
+}
+.main_image{
+    /* width: 450px;
+    height: 450px;  */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.main_image img{
+    position: absolute;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Styling the company section */
+
+.trusted_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide 1s forwards ;
+    
+}
+
+.trusted_container h2{
+    margin: 3rem 0;
+}
+
+.company_container{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    background-color: var(--light-gray);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width:650px){
+    .company_container{
+       grid-template-columns: repeat(2,1fr);
+       grid-template-rows: repeat(2,1fr);
+    }
+
+}
+.company-logo{
+    width: 20%;
+    height: 65%;
+}
+
+.company_container a{
+    color:grey ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
