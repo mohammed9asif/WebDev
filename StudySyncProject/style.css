@@ -231,3 +231,93 @@
     align-items: center;
     text-decoration: none;
 }
+
+/* Styling the cards section */
+
+.card_parent{
+    background-color: var(--light-gray);
+    width: 100vw;
+}
+.cards_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.cards_container h2{
+    margin: 1.2rem 0;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.cards_container p{
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: grey;
+    font-weight: 400;
+}
+
+.cards_section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem 2rem;
+}
+
+@media screen and (max-width:790px) {
+    .cards_section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+.card{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rbga(0,0,0,0.2);
+    border: 1px solid blue;
+}
+
+.card p{
+    color: white;
+}
+.card img{
+    width: 11%;
+    height: 19%;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+
+#card1{
+    background-color: #4a90e2;
+}
+#card2{
+    background-color: #FF6289;
+}
+#card3{
+    background-color: #fcbf58;
+}
+#card4{
+    background-color: #44bfc3;
+}
+#card5{
+    background-color: #77b05d;
+}
+#card6{
+    background-color: #7d78b1;
+}
