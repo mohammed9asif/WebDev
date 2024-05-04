@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssVariables changes through JS</title>
+
+    <style>
+        :root{
+            --baseColor : yellow;
+            --spacing: 10px;
+            --blur:10px;
+        }
+
+        img{
+            padding: var(--spacing);
+            background-color: var(--baseColor);
+            filter: blur(var(--blur));
+        }
+
+        .hl{
+            color: var(--baseColor);
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Changing CSS variable with <span class="hl">JS</span></h2>
+
+    <label for="">Spacing:</label>
+    <input type="range" name="spacing"min="10" max="200" id="spacing" data-sizing="px">
+
+    <label for="">Blur:</label>
+    <input type="range" name="blur" min="0" max="100" id="blur" data-sizing="px">
+
+    <label for="">Base Color:</label>
+    <input type="color" name="baseColor" id="baseColor">
+
+    <img src="spidy1.jpg" alt="image">
+
+    <script>
+        let spacing = document.querySelector("#spacing");
+        let blur = document.querySelector("#blur");
+        let baseColor = document.querySelector("#baseColor");
+        let element = document.querySelector(":root");
+        let image = document.querySelector('img');
+
+        let inputs = document.querySelectorAll("input");
+
+        function changeVarValue() {
+            let suffix = this.dataset.sizing || '';
+            element.style.setProperty(`--${this.name}`,`${this.value}${suffix}`);
+            console.log(`--${this.name}`,`${this.value}${suffix}`);
+        }
+        
+        inputs.forEach(input=>{input.addEventListener("change",changeVarValue)});
+        
+    
+        console.dir(spacing);
+        console.dir(baseColor);
+    </script>
+</body>
+</html>
